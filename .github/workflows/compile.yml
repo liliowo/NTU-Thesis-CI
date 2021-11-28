@@ -15,17 +15,7 @@ jobs:
       with:
         ref: master
 
-    - name: Clone From Hsins/NTU-Thesis
-      run: git clone https://github.com/Hsins/NTU-Thesis.git template
 
-    - name: Copy Fonts
-      run: cp -avr ./template/fonts ./
-
-    - name: Copy Figures
-      run: cp -avr ./template/figures ./
-
-    - name: Copy Template
-      run: cp ./template/ntuthesis.cls ./
 
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v2
